@@ -5041,7 +5041,7 @@ invokeAptGetUpdate() {
 	fi
 	# See https://www.debian.org/distrib/archive.en.html for a list of mirrors
 	if test -z "${IPE_DEB_ARCHIVE:-}"; then
-		IPE_DEB_ARCHIVE=http://archive.debian.org/debian/
+		IPE_DEB_ARCHIVE=http://archive.debian.org/debian
 	fi
 	if test -z "${IPE_DEB_ARCHIVE_SECURITY:-}"; then
 		IPE_DEB_ARCHIVE_SECURITY=http://archive.debian.org/debian-security
