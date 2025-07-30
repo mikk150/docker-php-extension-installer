@@ -5033,6 +5033,8 @@ invokeAptGetUpdate() {
 		invokeAptGetUpdate_fixdistro=jessie
 	elif grep -q 'VERSION="9 (stretch)"' /etc/os-release; then
 		invokeAptGetUpdate_fixdistro=stretch
+	elif grep -q 'VERSION="10 (buster)"' /etc/os-release; then
+		invokeAptGetUpdate_fixdistro=buster
 	else
 		invokeAptGetUpdate
 		return
